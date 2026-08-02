@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تواصل معنا - مصنع Emadoor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root{--blue-dark:#0066CC;--blue-light:#00A3FF}
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
+        nav{background:var(--blue-dark);padding:15px;text-align:center;position:sticky;top:0}
+        nav a{color:white;text-decoration:none;margin:0 20px;font-weight:700;font-size:18px}
+        .contact{background:#F4F8FB;padding:60px 20px}
+        .contact-box{max-width:700px;margin:auto;background:white;padding:40px;border-radius:15px;box-shadow:0 5px 20px rgba(0,102,204,0.1);border-top:5px solid var(--blue-light)}
+        .contact-box h2{color:var(--blue-dark)}
+        input,textarea{width:100%;padding:15px;margin:10px 0;border:2px solid #E0EFFF;border-radius:8px;font-size:16px}
+        input:focus,textarea:focus{border-color:var(--blue-light);outline:none}
+        .submit-btn{background:linear-gradient(135deg,var(--blue-light),var(--blue-dark));color:#fff;font-weight:900;border:none;cursor:pointer;padding:15px;width:100%;border-radius:8px;font-size:18px}
+        .whatsapp-float{position:fixed;bottom:20px;left:20px;background:#25D366;color:white;padding:15px;border-radius:50%;font-size:30px;text-decoration:none;z-index:999}
+        footer{background:linear-gradient(135deg, var(--blue-dark), var(--blue-light));color:white;padding:40px 20px;text-align:center}
+        footer a{color:white;text-decoration:none;margin:0 10px;font-size:18px}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="catalog.html">الكتالوج</a>
+        <a href="contact.html">تواصل معنا</a>
+    </nav>
+
+    <div class="contact">
+        <div class="contact-box">
+            <h2 style="text-align:center;font-size:32px;margin-bottom:20px">اطلب عرض سعر</h2>
+            <form action="https://formsubmit.co/حط_ايميلك_هنا@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="الاسم الكامل" required>
+                <input type="tel" name="phone" placeholder="رقم الواتساب" required>
+                <textarea name="message" rows="4" placeholder="اكتب الكمية والمقاسات والموديل" required></textarea>
+                <input type="hidden" name="_subject" value="طلب جديد - مصنع Emadoor">
+                <input type="hidden" name="_captcha" value="false">
+                <button type="submit" class="submit-btn">ارسال الطلب</button>
+            </form>
+        </div>
+    </div>
+
+    <a href="https://wa.me/2010XXXXXXXX" target="_blank" class="whatsapp-float">💬</a>
+
+    <footer>
+        <h3>مصنع Emadoor لأبواب WPC</h3>
+        <div style="margin:20px 0">
+            <a href="https://wa.me/201120000181" target="_blank">📱 واتساب</a>
+            <a href="https://www.facebook.com/share/1aUDBAErFk/" target="_blank">📘 فيسبوك</a>
+        </div>
+        <p>© 2026 جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html>
